@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>your list <% @lists.each do |list| %></h1>
+    <div class="card">
+      <p class="card-title"><%= link_to list.name, list_path(list) %></p>
+    </div>
+  <% end %>
+  <%= link_to "Add new List", new_list_path %>
+</div>
