@@ -1,4 +1,15 @@
 <div class="container">
   <h1><%= @list.name %></h1>
-  <h3>bookmarks</h3>
+  <%= link_to  "add movie", new_list_bookmark_path(@list)%>
+  <% @bookmarks.each do |bookmark| %>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="<%= bookmark.movie.poster_url %>" alt="movie poster">
+      <div class="card-body">
+        <h5 class="card-title"><%= bookmark.movie.title %></h5>
+        <p class="card-text"><%= bookmark.movie.overview %></p>
+        <p class="card-text">Rating: <%= bookmark.movie.rating %></p>
+        <p class="card-text">"<%= bookmark.comment %>"</p>
+      </div>
+    </div>
+  <% end %>
 </div>
