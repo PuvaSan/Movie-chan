@@ -1,8 +1,15 @@
-<div class="container">
-  <h1>your list <% @lists.each do |list| %></h1>
-    <div class="card">
-      <p class="card-title"><%= link_to list.name, list_path(list) %></p>
-    </div>
-  <% end %>
-  <%= link_to "Add new List", new_list_path %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.ibb.co/RNQmxNx/Untitled-design-1.png);">
+  <div class="container">
+    <h1>"Just come watch with me!"</h1>
+    <p class="ms-5">- Movie-chan</p>
+  </div>
+</div>
+<div class="container mx-auto mt-3">
+  <ul class="ms-0 row col-12 justify-content-center">
+    <h1>Movie List: <% @lists.each do |list| %></h1>
+      <li class="tape card col-6 p-3 m-3 d-flex justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://i.ibb.co/YZ3f8Jn/Untitled-500-x-300-px.png);">
+        <p><%= link_to list.name, list_path(list), class: "btn text-white text-uppercase tape-font" %></p>
+      </li>
+    <% end %>
+  </ul>
 </div>
