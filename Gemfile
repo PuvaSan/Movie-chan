@@ -74,4 +74,8 @@ end
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 
+# fix for ffi version difference
 gem 'ffi', '1.16.3'
+
+# Gemfile
+gem "cloudinary"
