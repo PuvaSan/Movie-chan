@@ -6,10 +6,10 @@
         <h5 class="card-header text-center text-truncate"><%= bookmark.movie.title %></h5>
         <img class="card-img-top" src="<%= bookmark.movie.poster_url %>" alt="movie poster">
         <div class="card-body p-2">
-          <p class="card-text text-truncate"><%= bookmark.movie.overview %></p>
+          <p class="card-overview"><%= bookmark.movie.overview %></p>
           <p class="card-text">Rating: <%= bookmark.movie.rating %></p>
           <div class="d-flex justify-content-between">
-            <p class="card-text">"<%= bookmark.comment %>"</p>
+            <p class="card-text-comment">"<%= bookmark.comment %>"</p>
             <%= link_to "",bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "fa-solid fa-delete-left delete-tab" %>
           </div>
         </div>

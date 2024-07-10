@@ -9,3 +9,19 @@
     color: red;
   }
 }
+
+.card-overview {
+  -webkit-line-clamp: 3;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+.card-img-top {
+  height: 384px;
+  width: 256px;
+  object-fit: cover;
+}

@@ -1,0 +1,19 @@
+
+.add-list-card{
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+  url(http://res.cloudinary.com/dckq0zged/image/upload/v1720585403/gdxclvpzaqmqoxqdjijv.png);
+  object-fit: cover;
+  height: 141px;
+  width: 259px;
+  border-radius: 5px;
+
+  .tape-font {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
