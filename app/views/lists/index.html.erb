@@ -9,8 +9,10 @@
   <div class="ms-0 row col-12 justify-content-center">
     <h1>Movie Lists: <% @lists.each do |list| %></h1>
       <div class="add-list-card tape col-6 p-0 m-3">
-        <p><%= link_to list.name, list_path(list), class: "btn text-uppercase tape-font text-truncate p-0 justify-content-center" %></p>
-        <img src="https://i.ibb.co/2j4JKWZ/Untitled-design.png" alt="user uploaded img">
+        <p class="text-center"><%= link_to list.name, list_path(list), class: "btn btn-outline-light text-uppercase tape-font text-truncate p-0 justify-content-center" %></p>
+        <div class="img-holder">
+          <img src="https://i.ibb.co/2j4JKWZ/Untitled-design.png" alt="user uploaded img">
+        </div>
       </div>
     <% end %>
   </div>

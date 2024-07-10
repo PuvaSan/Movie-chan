@@ -2,21 +2,23 @@
   <h1><%= @list.name %> <%= link_to "", @list, class: "delete-icon mt-3 fa-regular fa-square-minus", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%></h1>
   <div class="ms-0 row col-12 justify-content-center">
     <% @bookmarks.each do |bookmark| %>
-      <div class="col-6 p-3 m-3" style="width: 18rem;">
+      <div class="movie-card col-6">
         <h5 class="card-header text-center text-truncate"><%= bookmark.movie.title %></h5>
-        <img class="card-img-top" src="<%= bookmark.movie.poster_url %>" alt="movie poster">
-        <div class="card-body p-2">
-          <p class="card-overview"><%= bookmark.movie.overview %></p>
-          <p class="card-text">Rating: <%= bookmark.movie.rating %></p>
-          <div class="d-flex justify-content-between">
-            <p class="card-text-comment">"<%= bookmark.comment %>"</p>
-            <%= link_to "",bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "fa-solid fa-delete-left delete-tab" %>
+        <div class="img-card-box">
+          <img class="card-img-top" src="<%= bookmark.movie.poster_url %>" alt="movie poster">
+          <div class="card-body p-2">
+            <p class="card-overview"><%= bookmark.movie.overview %></p>
+            <span class="card-rating"><%= bookmark.movie.rating %></span>
+            <div class="d-flex justify-content-between">
+              <p class="card-text-comment">"<%= bookmark.comment %>"</p>
+              <%= link_to "",bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "fa-solid fa-delete-left delete-tab" %>
+            </div>
           </div>
         </div>
       </div>
     <% end %>
-    <div class="card-img-top add-movie col-6 p-3 mt-5 m-5 d-flex justify-content-center align-items-center">
-      <%= link_to  "➕ Add Movie", new_list_bookmark_path(@list), class: "mb-2 btn btn-link btn-lg"%>
+    <div class="card-img-top add-movie col-6 d-flex justify-content-center align-items-center">
+      <%= link_to  "Add Movie", new_list_bookmark_path(@list), class: "mb-2"%>
     </div>
   </div>
 </div>

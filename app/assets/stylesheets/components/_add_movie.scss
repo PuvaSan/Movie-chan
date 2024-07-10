@@ -5,6 +5,18 @@
   height: 384px;
   object-fit: none;
   background-repeat: no-repeat;
-  margin-top: 50px;
+  margin: 24px 16px;
   border-radius: 5px;
+  padding: 0px;
+
+  a {
+    font-family: "Caveat";
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    transition: 0.3s;
+    &:hover {
+      color: white;
+    }
+  }
 }

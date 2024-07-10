@@ -1,27 +1,62 @@
 .delete-tab {
   color: rgba(255, 0, 0, 0.358);
-  font-size: 24px;
+  font-size: 16px;
   text-decoration: none;
   transition: transform .2s;
 
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: red;
   }
 }
 
-.card-overview {
-  -webkit-line-clamp: 3;
-  /* autoprefixer: off */
-  -webkit-box-orient: vertical;
-  /* autoprefixer: on */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-}
+.movie-card {
+  margin: 8px;
+  width: 210px;
+  position: relative;
 
-.card-img-top {
-  height: 384px;
-  width: 256px;
-  object-fit: cover;
+  .card-overview {
+    -webkit-line-clamp: 3;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    font-style: oblique;
+    font-size: 12px;
+
+  }
+
+  .card-img-top {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .img-card-box {
+    position: relative;
+  }
+
+  .card-text-comment{
+    font-family: "Caveat";
+    font-size: 24px;
+  }
+
+  .card-rating {
+  background-color: #9362AC ;
+  color: white;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  height:25px;
+  width: 25px;
+  border-radius: 50%;
+  text-align: center;
+  }
+
+  a {
+    margin: auto 0;
+  }
 }
