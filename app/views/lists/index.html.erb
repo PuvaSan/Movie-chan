@@ -11,7 +11,8 @@
       <div class="add-list-card tape col-6 p-0 m-3">
         <p class="text-center"><%= link_to list.name, list_path(list), class: "btn btn-outline-light text-uppercase tape-font text-truncate p-0 justify-content-center" %></p>
         <div class="img-holder">
-          <img src="https://i.ibb.co/2j4JKWZ/Untitled-design.png" alt="user uploaded img">
+          <%# <img src="https://i.ibb.co/2j4JKWZ/Untitled-design.png" alt="user uploaded img"> %>
+          <%= cl_image_tag("cld-sample-3", crop: :thumb, gravity: :face) %>
         </div>
       </div>
     <% end %>
