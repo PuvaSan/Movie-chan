@@ -1,13 +1,13 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.photo.key, height: 300, crop: :fill %>')"
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.photo.key, crop: :pad %>')"
 >
   <div class="container">
-    <h1>"Put all your movies/shows in a list </h1>
-    <h1> and just come watch with me!"</h1>
+    <h1>"Make your collection special </h1>
+    <h1> with a note in the comments!"</h1>
     <p class="ms-5">- Movie-chan</p>
   </div>
 </div>
 <div class="container">
-  <h1><%= @list.name %> <%= link_to "", @list, class: "delete-icon mt-3 fa-regular fa-square-minus", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%></h1>
+  <h1><%= @list.name %> <%= link_to "", @list, class: "delete-icon m-4 fa-regular fa-square-minus", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%></h1>
   <div class="ms-0 row col-12 justify-content-center">
     <% @bookmarks.each do |bookmark| %>
       <div class="movie-card col-6">
