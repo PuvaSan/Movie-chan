@@ -26,10 +26,15 @@ $link-hover-color: black;
     color: white;
     transition: 0.3s;
     text-align: center;
+
   }
 
   p {
     margin-bottom: -9px;
+    width: 255px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .img-holder {

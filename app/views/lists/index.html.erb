@@ -9,7 +9,7 @@
   <div class="ms-0 row col-12 justify-content-center">
     <h1>Your Movie Lists: <% @lists.each do |list| %></h1>
       <div class="add-list-card tape col-6 p-0 m-3">
-        <p class="text-center"><%= link_to list.name, list_path(list), class: "tape-font text-truncate" %></p>
+        <p class="text-center"><%= link_to list.name, list_path(list), class: "tape-font" %></p>
         <div class="img-holder">
           <%= cl_image_tag list.photo.key, crop: :thumb, gravity: :face%>
         </div>
