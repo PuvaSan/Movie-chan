@@ -48,7 +48,9 @@ $link-hover-color: black;
     object-fit: fill;
     max-width: 95px;
     max-height: 75px;
-    margin-top: 10px;
+    // margin-top: 10px;
+    background-size: cover;
+    background-position: center;
     }
   }
 }
