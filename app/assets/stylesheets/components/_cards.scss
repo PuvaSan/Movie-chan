@@ -12,8 +12,9 @@
 
 .movie-card {
   margin: 8px;
-  width: 210px;
+  width: 200px;
   position: relative;
+  align-items: center;
 
   .card-overview {
     -webkit-line-clamp: 3;
@@ -28,16 +29,19 @@
 
   }
 
+  .img-card-box {
+    position: relative;
+    justify-content: center;
+    max-width: 200px;
+  }
+
   .card-img-top {
     height: 250px;
-    width: 200px;
+    width: 176px;
     object-fit: cover;
     border-radius: 10px;
   }
 
-  .img-card-box {
-    position: relative;
-  }
 
   .card-text-comment{
     font-family: "Caveat";
