@@ -11,12 +11,19 @@
   &:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
+
+    .tape-font {
+      color: rgb(39, 108, 255);
+    }
   }
 
   .tape-font {
     font-size: 24px;
     font-weight: bold;
     font-family: "Caveat";
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
   }
 
   p {
@@ -53,7 +60,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
     a {
-      color:rgb(122, 154, 224);
+      color:rgb(39, 108, 255);
     }
   }
 
