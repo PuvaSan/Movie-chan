@@ -1,4 +1,6 @@
 
+$link-hover-color: black;
+
 .add-list-card{
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
   url(http://res.cloudinary.com/dckq0zged/image/upload/v1720585403/gdxclvpzaqmqoxqdjijv.png);
@@ -13,21 +15,21 @@
     transform: scale(1.05);
 
     .tape-font {
-      color: rgb(39, 108, 255);
+      color: $link-hover-color;
     }
   }
 
   .tape-font {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 36px;
     font-family: "Caveat";
     text-decoration: none;
     color: white;
     transition: 0.3s;
+    text-align: center;
   }
 
   p {
-    margin-bottom: 0;
+    margin-bottom: -9px;
   }
 
   .img-holder {
@@ -60,7 +62,8 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
     a {
-      color:rgb(39, 108, 255);
+      color: white;
+      text-shadow: 2px 2px $link-hover-color;
     }
   }
 
@@ -68,11 +71,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
+    font-size: 38px;
     text-decoration: none;
     color: white;
-    margin-top: 62px;
+    margin-top: 49px;
     transition: 0.3s;
+    font-family: "Caveat";
   }
 }
 
