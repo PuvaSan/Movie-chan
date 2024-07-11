@@ -7,7 +7,10 @@
   </div>
 </div>
 <div class="container">
-  <h1><%= @list.name %> <%= link_to "", @list, class: "delete-icon m-4 fa-regular fa-square-minus", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%></h1>
+  <div class="d-flex flex-row bd-highlight m-4">
+    <h1 class="list-name-title"><%= @list.name %></h1>
+    <%= link_to "", @list, class: "delete-icon fa-regular fa-square-minus", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+  </div>
   <div class="ms-0 row col-12 justify-content-center">
     <% @bookmarks.each do |bookmark| %>
       <div class="movie-card col-6">
